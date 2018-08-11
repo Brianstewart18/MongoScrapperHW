@@ -33,23 +33,7 @@ app.use(express.static(__dirname + "/public"));
 
 // Database configuration with mongoose
 
-//---------- Define local MongoDB URI -------------
- 
-
-
-//-------------------------------------------------
-
- if (process.env.MONGODB_URI) {
-
- mongoose.connect(process.env.MONGODB_URI)
-
- } else {
-
-   mongoose.connect("mongodb://localhost/newsdb"); 
- }
-
-//-------------------------------------------------
-
+mongoose.connect("mongodb://heroku_55mxd0vz:gjbjeg0kqqm2taqb53617sr5tl@ds119422.mlab.com:19422/heroku_55mxd0vz")
 const db = mongoose.connection;
 
 // Show any mongoose errors
