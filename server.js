@@ -17,7 +17,7 @@ mongoose.Promise = Promise;
 // Initialize Express
 const app = express();
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 27017;
 
 
 // Use morgan & body parser 
@@ -34,7 +34,7 @@ app.use(express.static(__dirname + "/public"));
 // Database configuration with mongoose
 
 //---------- Define local MongoDB URI -------------
-  mongoose.connect("mongodb://localhost/newsdb");
+ 
 
 
 //-------------------------------------------------
