@@ -72,7 +72,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-const routes = require("./controllers/controller.js");
+const routes = require("./controllers/Controller.js");
 app.use("/", routes);
 
 
