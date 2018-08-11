@@ -52,7 +52,7 @@ db.once("open", () => {
 const exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({
-  defaultLayout: "main"
+  defaultLayout: "Main"
 }));
 app.set("view engine", "handlebars");
 
